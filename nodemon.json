@@ -1,0 +1,5 @@
+{
+    "env":{
+        "JWT_KEY":"supersecret_do_not_share"
+    }
+}

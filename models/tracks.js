@@ -1,25 +1,19 @@
-const mongoose= require('mongoose')
+const mongoose = require("mongoose");
 
 const Schema = mongoose.Schema;
 
 const tracksSchema = new Schema({
-  name: {
-    type: String,
-    required: true,
-  },
-  singer: {
-    type: String,
-    required: true,
-  },
-  category: {
+  name: String,
+
+  singer: String,
+
+  categoryId: {
     type: Schema.Types.ObjectId,
     ref: "Category",
-    required: true,
   },
-  album: {
+  albumId: {
     type: Schema.Types.ObjectId,
     ref: "Album",
-    required: true,
   },
 });
 
